@@ -1,0 +1,22 @@
+.homepage{
+    background-color: #000;
+    border-radius:  0% 0% 55px 55px;
+}
+.homeBody{
+    color:#fff;
+    padding: 20px;
+}
+
+/*headings of homepage*/
+.headingBox{
+    
+    text-align: center;
+}
+
+.SocialMedia{
+
+}
+.SocialMedia img{
+    height: 80px;
+    width: 200px;
+}

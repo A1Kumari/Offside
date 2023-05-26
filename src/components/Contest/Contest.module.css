@@ -1,0 +1,57 @@
+.background{
+    background-color: #232528;
+}
+.container{
+    background-color: #000;
+    padding: 50px;
+ 
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerBox {
+    
+    color: white;
+    width: 70%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding-left: 20px;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .containerBox:hover {
+    background-color: #232528;
+    border: 1px solid #3783EB;
+  }
+  
+  .containerBox.selected {
+    background-color: red; /* Change the color of the selected box */
+    border: 5px solid #fff;
+  }
+  
+  .containerBox h4 {
+    font-size: 1.5rem; /* Increase the font size */
+    margin-bottom: 5px; /* Adjust the spacing */
+  }
+  
+  .containerBox p {
+    font-size: 1rem; /* Increase the font size */
+  }
+  
+  .rightSide{
+    margin-left: 90px;
+  }
+  .rightSide img {
+    margin-left: 20px;
+    border-radius: 32px;
+    height: 500px;
+    width: 300px;
+    margin-left: auto;
+    
+  }
+  
