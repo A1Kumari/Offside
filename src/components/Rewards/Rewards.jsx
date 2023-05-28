@@ -2,56 +2,61 @@ import React from "react";
 import styles from "./Rewards.module.css"
 import lounge from '../../assets/images/Lounge.jpg';
 import Heading from "../../util/Heading";
+import ProgressBar from "../../util/ProgressBar.js";
 import OffsideLogo from '../../assets/images/offsideblue.svg';
 import Rewards1 from "../../assets/images/Rectangle 35 (1).png";
 import Rewards2 from "../../assets/images/Rectangle 3282.jpg";
 import PhoneCase from "../../assets/images/phoneScreen (1).png";
 import Coin from "../../assets/images/coin2 9.png";
 import offsideCoin from "../../assets/images/Union.png";
+import Phone from "../../assets/images/phonecase.png";
 import Star3 from "../../assets/images/Star 3.png";
 import Star1 from "../../assets/images/Star 1.png";
 import Star2 from "../../assets/images/Star 2.png";
+import Voucher from "../../assets/images/image 13.png";
+import Shoes from "../../assets/images/shoes 1.png";
+import Watch from "../../assets/images/smart watch 1.png";
+
 const Rewards = () =>{
+  const progress = 75;
     return(
         <>
         <div className={styles.RewardSection}>
           <div className={styles.leftSection}>
             <div className={styles.Rewardbox}>
-              <img src={OffsideLogo} />
-              <h3>Referral rewards</h3>
-              <p>5 Users can earn an Amazon gift 
-              card worth INR. 200 for each 
-              successful referral, and 5
-              new users can earn an Amazon 
-              gift card worth INR. 100 daily.</p>
+              <div className={styles.centered}>
+                <img src={OffsideLogo} />
+                <h3>Referral rewards</h3>
+              </div>
+              <div className={styles.inLine}>
+                <p>5 Users can earn an Amazon gift 
+                card worth INR. 200 for each 
+                successful referral, and 5
+                new users can earn an Amazon 
+                gift card worth INR. 100 daily.</p>
+                <img src={Voucher}/>
+              </div>
              <div className={styles.bar}></div>
             </div>
 
             <div className={styles.Rewardbox}>
-              <img src={OffsideLogo} />
-              <h3>Referral rewards</h3>
-              <p>5 Users can earn an Amazon gift 
-              card worth INR. 200 for each 
-              successful referral, and 5
-              new users can earn an Amazon 
-              gift card worth INR. 100 daily.</p>
+              <div className={styles.centered}>
+                <img src={OffsideLogo} />
+                <h3>Referral rewards</h3>
+              </div>
+              <div className={styles.inLine}>
+                <p>5 Users can earn an Amazon gift 
+                card worth INR. 200 for each 
+                successful referral, and 5
+                new users can earn an Amazon 
+                gift card worth INR. 100 daily.</p>
+                <img src={Watch}/>
+              </div>
              <div className={styles.bar}></div>
             </div>
       </div>
           <div className={styles.middleSection}>
-            <div className={styles.blackPhoneBox}>
-              <img src={PhoneCase} alt="phone case"/>
-            </div>
-            <div className={styles.text}>
-              <div className={styles.coinUnion}>
-              <img src={Coin} alt="coin"/>
-              <img src={offsideCoin} alt="coin" className={styles.offsideCoin}/>
-              
-             </div>
-              
-              
-            </div>
-            <h2 className={styles.phoneScreenText}>Earn exciting rewards</h2>
+            <img src={Phone}/>
           </div>
           
           <div className={styles.rightSection}>

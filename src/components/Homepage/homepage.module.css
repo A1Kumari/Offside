@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 .homepage{
     background-color: #000;
     border-radius:  0% 0% 55px 55px;
+    font-family: 'Poppins', sans-serif;
 }
 .homeBody{
     color:#fff;

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Doubt.module.css';
 import lounge from '../../assets/images/Lounge.jpg';
+import HalfPhone from '../../assets/images/halfPhone.png';
 import Heading from "../../util/Heading";
 
 const Doubt = () =>{
@@ -14,7 +15,7 @@ const Doubt = () =>{
               <p>A place that makes conversations as memorable as the matches.</p>
             </div>
             <div className={styles.image}>
-              <img alt="Logo" src={lounge} className={styles.lounge_img}/>
+              <img alt="Logo" src={HalfPhone} className={`${styles.half_img} ${styles.bottom}`}/>
             </div>
           </div>
           <div className={styles.cell2}>
@@ -23,7 +24,7 @@ const Doubt = () =>{
               <p>A place that makes conversations as memorable as the matches.</p>
             </div>
             <div className={styles.image}>
-              <img alt="Logo" src={lounge} className={styles.lounge_img}/>
+              <img alt="Logo" src={HalfPhone} className={`${styles.half_img} ${styles.more_bottom}`}/>
             </div>
           </div>
           <div className={styles.cellLong}>
@@ -36,7 +37,6 @@ const Doubt = () =>{
             </div>
           </div>
         </div>
-
         <div className={styles.video}>
         <iframe
       width="1300"

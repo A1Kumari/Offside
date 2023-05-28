@@ -2,37 +2,46 @@ import React, { useState } from "react";
 import Card from "../../util/Card";
 import Heading from "../../util/Heading";
 import styles from './Contest.module.css';
-import ReverseFantasy from '../../assets/images/ReverseFantasy.jpg';
-import Prediction from '../../assets/images/Prediction.jpg';
-import Quizes from '../../assets/images/Quizes.jpg';
+import ReverseFantasy from '../../assets/images/fantasy.png';
+import Prediction from '../../assets/images/prediction.png';
+import Quizes from '../../assets/images/quizzes.png';
 
 
 function Contest() {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("quizzes");
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
   };
-
+  
   return (
     <div className={styles.background}>
       <Heading
-        heading="Winning is the best feeling in the world, but the thrill of the contest is even better"
-        subheading="A place that makes conversations as memorable as the matches."
+        heading="Non-money contests"
+        subheading="Contests are the best way to earn rewards and enjoy the platform"
       />
-
+  
       <div className={styles.container}>
         <div className={styles.leftSide}>
-          <div onClick={() => handleOptionClick("quizzes")} className={styles.containerBox}>
-            <h4>Quizzes</h4>
+          <div
+            onClick={() => handleOptionClick("quizzes")}
+            className={`${styles.containerBox} ${selectedOption === "quizzes" ? styles.selectedOption : ""}`}
+          >
+            <h1>Quizzes</h1>
             <p>Play daily quizzes</p>
           </div>
-          <div onClick={() => handleOptionClick("reverseFantasy")} className={styles.containerBox}>
-            <h4>Reverse Fantasy</h4>
+          <div
+            onClick={() => handleOptionClick("reverseFantasy")}
+            className={`${styles.containerBox} ${selectedOption === "reverseFantasy" ? styles.selectedOption : ""}`}
+          >
+            <h1>Reverse Fantasy</h1>
             <p>Play daily quizzes</p>
           </div>
-          <div onClick={() => handleOptionClick("predictions")} className={styles.containerBox}>
-            <h4>Predictions</h4>
+          <div
+            onClick={() => handleOptionClick("predictions")}
+            className={`${styles.containerBox} ${selectedOption === "predictions" ? styles.selectedOption : ""}`}
+          >
+            <h1>Predictions</h1>
             <p>Play daily quizzes</p>
           </div>
         </div>
@@ -44,6 +53,8 @@ function Contest() {
       </div>
     </div>
   );
+  
+  
 }
 
 export default Contest;
